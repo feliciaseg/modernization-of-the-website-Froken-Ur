@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fröken ur - ställ om klockan</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./stall-om-klockan.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+     <!--HEADER-->
+  <header class="color">
+    <div class="container-fluid d-flex flex-row justify-content-center pt-4" > 
+        <span class="material-icons md-36 clock-logo align-self-center"> query_builder</span> 
+        <h1 style="font-size: 4vw;" class="align-self-center">Fröken ur - Vad är klockan nu?</h1> 
+     </div>    
+ </header> 
+ <!--HEADER END-->
+
+
+    <!--NAV-BAR-->
+    <nav class="navbar navbar-expand navbar-light color d-flex justify-content-center">
+        <a class="navbar-brand" href="#"> </a> 
+           <ul class="navbar-nav ">
+              <li class="nav-item ">
+                 <a class="nav-link" href="./index.html"> Aktuell tid <span class="sr-only">(current)</span></a>
+              </li> 
+              <li class="nav-item active">
+                <a class="nav-link" href="./stall-om-klockan.html">Ställ om klockan</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tidszoner</a>
+              </li>
+            </ul>
+    </nav>
+    <!--NAV-BAR END-->
+
+
+    <!-- MAIN-->
+    <main class="main-color"> 
+        <div class="container p-5">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <div class="row d-flex justify-content-start m-2 p-2">
+                        <h5> Ställa om klockan </h5>
+                        <p> Sista söndagen i mars övergår de flesta länder i Europa till sommartid, det görs på samma klockslag som vi gör det i Sverige. 
+                            Endast 3 länder i Europa har valt att inte använda sommartid. De länder som inte har sommartid är Ryssland, Vitryssland och Island.​</p>
+                        <p> Normaltid som vi i vardagligt tal kallar för vintertid återgår vi till i höst, det sker den sista söndagen i oktober varje år. 
+                            Normaltiden innebär att vi ställer tillbaka klockan en timma, och återgå till ordinarie tid (normaltid) igen.</p>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="row d-flex justify-content-start p-2 m-2">
+                            <h5>Missat att ställa om klockan?</h5>
+                            <p> Här kan du anmäla dig för att få en sms-påminnelse dagen innan sommartid börjar och slutar.</p>
+
+                            <form action= "/onSubmit.php" method="POST">  
+                                <div class="form-group ">
+                                <label for="phone"> Mobilnummer: </label>
+                                    <input type="text" class="form-control mb-2" id="phone" pattern= "[0-9]+" required>
+                                    <input type="checkbox" class="form-check-input ml-0" id="checkbox" required>
+                                    <label class= "form-check-label ml-3 mb-3" for= "checkbox"> Jag godkänner att mitt mobilnummer sparas tills dess att jag avanmäler mig från tjänsten.</label>
+
+                                    <div class="container d-flex justify-content-start">
+                                        <button type="Submit" class= "knapp btn-lg "> Skicka in</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                </div>
+            </div>
+        </div>  
+    </main>
+
+    <!--MAIN END-->
+    
+    <!-- FOOTER -->
+    <footer class="color">
+        <div class= "container p-5" >
+            <div class="row text-center">
+                <div class= "col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <ul class= "list-unstyled row d-flex justify-content-center mb-5"> 
+                        <li class="material-icons md-36 p-3"> thumb_up </li> 
+                        <li class="material-icons md-36 p-3">share </li> 
+                        <li class="material-icons md-36 p-3">photo_camera </li> 
+                    </ul>
+                </div>
+            
+                <div class= "col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                     <h5> International time sites</h5>
+                     <ul class= "list-unstyled quick-links pt-3">
+                        <li><a href="#" class="text-dark"> Hva er klokka </a></li>
+                        <li><a href="#" class="text-dark"> Que hora es </a></li>
+                        <li><a href="#" class="text-dark"> Neiti Aika </a></li>
+                    </ul>
+                </div>
+
+                <div class= "col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <h5> Länkförslag</h5>
+                    <ul class= "list-unstyled quick-links pt-3">
+                        <li><a href="#" class="text-dark"> Svensk kalender </a></li>
+                        <li><a href="#" class="text-dark"> Beskära träd </a></li>
+                        <li><a href="#" class="text-dark"> Blomsterspråket </a></li>
+                    </ul>
+                </div>
+
+                <div class= "col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <h5> International weeksites</h5>
+                    <ul class= "list-unstyled quick-links pt-3 ">
+                        <li><a href="#" class="text-dark"> Viikko </a></li>
+                        <li><a href="#" class="text-dark"> What week </a></li>
+                        <li><a href="#" class="text-dark"> Hvilken uke </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!--FOOTER END-->
+
+<!--Scripts-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>

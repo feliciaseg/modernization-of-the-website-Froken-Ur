@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+
+/*HEADER*/
+h1 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: italic;
+} 
+
+.clock-logo {
+    transition-property: transform; 
+    transition-duration: 1s;
+}
+
+.clock-logo:hover {
+    transform: rotate(360deg); 
+    -webkit-transform: rotate(360deg);
+}
+
+
+/*MAIN*/ 
+p {
+    font-size: 1.2rem;
+}
+
+.material-icons.md-36 { 
+    font-size: 36px;
+}
+
+.knapp {
+    transition: 1s ease-in-out;
+    background-color: #EFB46F;
+}
+
+.knapp:hover {
+    background-color: lightgray;
+    border: solid #EFB46F;
+}
+
+
+/*REUSABLE*/
+.main-color { 
+    background-color: lightgrey;
+} 
+
+.color{
+    background-color: #efb46f;
+}
+
+h5 {
+    font-weight: bold;
+} 
+
+
+
+
+
